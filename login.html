@@ -1,54 +1,71 @@
 <!doctype html>
 <html lang="es">
-    <!--
-Ejemplo de formulario de login con Bootstrap
-Basado en:
-  Plantilla inicial de Bootstrap 4
-  @author parzibyte
-  Visita: parzibyte.me/blog
--->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
-            shrink-to-fit=no">
-        <meta name="description" content="Formulario de login con Bootstrap">
-        <meta name="author" content="Parzibyte">
-        <title>Formulario de login con Bootstrap</title>
-        <!-- Cargar el CSS de Boostrap-->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Formulario de login con Bootstrap">
+    <meta name="author" content="Parzibyte">
+    <title>Formulario de login con Bootstrap</title>
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('URL_DE_TU_IMAGEN_DE_FONDO');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #FF5757; 
+        }
 
-    <body>
-        <main role="main" class="container my-auto">
-            <div class="row">
-                <div id="login" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3
-                    col-12">
-                    <h2 class="text-center">Bienvenido de nuevo</h2>
-                    <img class="img-fluid mx-auto d-block rounded"
-                        src="https://picsum.photos/id/870/300/200" />
+        #login {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
 
-                    <form>
-                        <div class="form-group">
-                            <label for="correo">Correo</label>
-                            <input id="correo" name="correo"
-                                class="form-control" type="email"
-                                placeholder="Correo electrónico">
-                        </div>
-                        <div class="form-group">
-                            <label for="palabraSecreta">Contraseña</label>
-                            <input id="palabraSecreta" name="palabraSecreta"
-                                class="form-control" type="password"
-                                placeholder="Contraseña">
-                        </div>
-                        <button type="submit" class="btn btn-primary mb-2">
-                            Entrar
-                        </button>
-                        <br>
-                        <a href="#">Contraseña olvidada</a>
-                    </form>
-                </div>
+        h2 {
+            color: #FF5757; 
+        }
+
+        label {
+            color: #FF5757; 
+        }
+
+        .btn-primary {
+            background-color: #FF5757;
+            border-color: #FF5757; 
+        }
+
+        .btn-primary:hover {
+            background-color: #E24949; 
+            border-color: #E24949; 
+        }
+    </style>
+</head>
+<body>
+    <main role="main" class="container my-auto">
+        <div class="row">
+            <div id="login" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-12">
+                <h2 class="text-center">Bienvenido de nuevo</h2>
+                <img class="img-fluid mx-auto d-block rounded" src="https://picsum.photos/id/870/300/200" />
+
+                <form>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input id="correo" name="correo" class="form-control" type="email" placeholder="Correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="palabraSecreta">Contraseña</label>
+                        <input id="palabraSecreta" name="palabraSecreta" class="form-control" type="password" placeholder="Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Entrar</button>
+                    <br>
+                    <a href="#">Contraseña olvidada</a>
+                </form>
             </div>
-        </main>
-    </body>
-
+        </div>
+    </main>
+</body>
 </html>
+
